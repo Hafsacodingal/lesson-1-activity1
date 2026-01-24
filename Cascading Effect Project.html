@@ -6,30 +6,29 @@
     <style>
         body {
             background-color: lightcoral;
-
             background-image: url("css image.jpg");
-            background-attachment: fixed;
+            background-attachment:scroll;
             background-repeat: no-repeat;
-            background-size: 400px;
+            background-size: 600px;
             background-position: top right;
         }
         #linearGradients{
         width:400px;
-        height: 400px;
-        background: linear-gradient(to bottom left, maroon 20%, blue 40%, pink 30%); 
+        height: 300px;
+        background: linear-gradient(to top left, maroon 20%, blue 40%, pink 30%); 
     }
     #radialgradients{
         width: 400px; 
-        height: 400px;
-        background: radial-gradient(lightgray,lightseagreen,lightslategray);
+        height: 300px;
+        background: radial-gradient( lightgray,lightseagreen,lightslategray);
+        
     }
     #Animation{
         width: 400px;
-        height: 400px;
+        height: 300px;
         animation-name:Animation ;
         animation-duration: 5s;
         animation-iteration-count: infinite;
-        margin-bottom: auto ;
     }
     @keyframes Animation{
         0%{background-color: blanchedalmond;}
@@ -38,7 +37,6 @@
     }
     </style>
 </head>
-
 <body>
 <div id="linearGradients"><h1>Here I used lineargradients</h1></div>
 <div id="radialgradients"><h1>Here I used Radialgradients</h1></div>
