@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pseudo classes</title>
+    <style>
+        body {
+            background-color: lightskyblue;
+            font-style: Arial;
+            color: white;
+        }
+
+        h1 {
+            color: lightcoral;
+        }
+
+        /* Attribute selector */
+        a {
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: rgb(255, 0, 102);
+        }
+
+        /*Child selector*/
+        ul>li {
+            font-weight: bold;
+        }
+
+        /* Sibling Selector */
+        h1+p {
+            background-color: #161B22;
+            border-radius: 5px;
+        }
+
+        /* :hover Pseudo-class */
+        ul li:hover {
+            color: #4F8CC9;
+        }
+
+        /* :nth-child(n) Pseudo-class */
+        ul li:nth-child(3) {
+            background-color: #8a5ba3;
+        }
+
+        /* :not(selector) Pseudo-class */
+        p:not(:first-of-type) {
+            text-decoration: underline;
+        }
+
+        /* ::before Pseudo-element */
+        ul li::before {
+            content: "";
+        }
+
+        /* ::after Pseudo-element */
+        a::after {
+            content: "";
+        }
+
+        /* ::first-letter Pseudo-element */
+        p::first-letter {
+            font-size: 200%;
+            color: #FF7B72;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to Codingal</h1>
+    <ul>
+        <li>Codingal Classes</li>
+        <li>Codingal Activities</li>
+        <li>Codingal Projects</li>
+        <li>Codingal Quizzes</li>
+    </ul>
+    <p>Codingal is a website created to make the children understand what coding actually is and to make coding easy for
+        them.</p>
+    <p>I recently join Codingal to learn about coding.</p>
+    <a href="#">Join Codingal</a><br>
+    <a href="#">Information About Codingal</a><br>
+</body>
+
+</html>
