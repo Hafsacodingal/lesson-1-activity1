@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Methods, Loops and Switches</title>
+</head>
+
+<body>
+    <h2>Random Numbers:</h2>
+    <div id="randomNumbers"></div>
+
+    <h2>Current Date:</h2>
+    <div id="currentDate"></div>
+
+    <h2>Rounded Random Number:</h2>
+    <div id="roundedRandom"></div>
+
+    <script>
+        // 1. Print 5 random numbers using a loop
+        var randomNumbersDiv = document.getElementById("randomNumbers");
+        for (var i = 0; i < 5; i++) {
+            randomNumbersDiv.innerHTML += Math.random() + "<br>";
+        }
+
+        // 2. Print the current date
+        var currentDateDiv = document.getElementById("currentDate");
+        var today = new Date();
+        currentDateDiv.innerHTML = today;
+
+        // 3. Print a rounded random number (0 to 9)
+        var roundedRandomDiv = document.getElementById("roundedRandom");
+        var roundedNumber = Math.floor(Math.random() * 10);
+        roundedRandomDiv.innerHTML = roundedNumber;
+    </script>
+</body>
+
+</html>
