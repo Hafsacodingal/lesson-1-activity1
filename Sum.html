@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sum of Arguments & Trigonometry</title>
+</head>
+
+<body>
+    <h2>Sum of Arguments</h2>
+
+    <script>
+        // Create an object with a function to calculate sum
+        var calculator = {
+            sum: function (a, b, c) {
+                return a + b + c;
+            }
+        };
+
+        // Call the function and store result
+        var result = calculator.sum(5, 10, 15);
+        document.write("Sum of 5, 10, 15 = " + result + "<br><br>");
+    </script>
+
+    <h2>Trigonometric Values</h2>
+
+    <script>
+        // Object for trigonometric calculations
+        var trig = {
+            angle: 45, // you can change this value
+            sinValue: function () {
+                return Math.sin(this.angle * Math.PI / 180);
+            },
+            cosValue: function () {
+                return Math.cos(this.angle * Math.PI / 180);
+            },
+            tanValue: function () {
+                return Math.tan(this.angle * Math.PI / 180);
+            }
+        };
+
+        document.write("Angle: " + trig.angle + "°<br>");
+        document.write("Sin: " + trig.sinValue().toFixed(2) + "<br>");
+        document.write("Cos: " + trig.cosValue().toFixed(2) + "<br>");
+        document.write("Tan: " + trig.tanValue().toFixed(2) + "<br>");
+    </script>
+</body>
+
+</html>
