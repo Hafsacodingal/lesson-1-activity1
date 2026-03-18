@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Object and Array Example</title>
+</head>
+
+<body>
+    <h2>Object Example</h2>
+    <p id="objectOutput"></p>
+
+    <h2>Array Example</h2>
+    <p id="arrayOutput"></p>
+    <p id="arrayAfterPop"></p>
+
+    <script>
+        // 1. Creating an object
+        var student = {
+            name: "Ali",
+            age: 20,
+            course: "JavaScript"
+        };
+
+        // Display object properties
+        document.getElementById("objectOutput").innerHTML =
+            "Name: " + student.name + ", Age: " + student.age + ", Course: " + student.course;
+
+        // 2. Creating an array
+        var fruits = ["Apple", "Banana", "Mango", "Orange"];
+
+        // Display array using index
+        var firstFruit = fruits[0]; // Apple
+        var secondFruit = fruits[1]; // Banana
+
+        // Display whole array using join
+        document.getElementById("arrayOutput").innerHTML =
+            "Fruits: " + fruits.join(", ");
+
+        // 3. Remove last element using pop
+        fruits.pop();
+
+        // Display array after pop
+        document.getElementById("arrayAfterPop").innerHTML =
+            "After removing last fruit: " + fruits.join(", ");
+    </script>
+</body>
+
+</html>
