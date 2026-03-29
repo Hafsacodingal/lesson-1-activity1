@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Array </title>
+</head>
+
+<body>
+    <h1>Multiplication of numbers by 10</h1>
+    <p id="product_value"></p>
+    <script>
+        var numbers = [40, 100, 1, 5, 25, 10];
+        function myFunction(num) {
+            return num * 10;
+        }
+        var newarray = numbers.map(myFunction);
+        document.getElementById("product_value").innerHTML = newarray;
+
+    </script>
+</body>
+
+</html>
