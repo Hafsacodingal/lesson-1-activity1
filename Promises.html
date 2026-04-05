@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Promises in JS</title>
+</head>
+
+<body>
+    <h1>Promises in JS</h1>
+    <script>
+        mypromise = new Promise((resolve, reject) => {
+            success = true;
+            if (success) {
+                resolve("operation successfull!");
+            } else {
+                reject("operation failed!");
+            }
+        });
+        mypromise
+            .then(result => {
+                document.write(result);
+            })
+            .catch(error => {
+                document.write(error);
+            });
+
+    </script>
+</body>
+
+</html>
