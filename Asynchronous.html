@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Asynchronous Functions in JS</title>
+</head>
+
+<body>
+    <h1>Asynchronous Functions in JS</h1>
+    <p id="output">Waiting...</p>
+    <script>
+        function getData() {
+            return new Promise(function (resolve) {
+                setTimeout(function () {
+                    resolve("Data received");
+                }, 2000);
+            });
+        }
+
+        async function showData() {
+            let result = await getData();
+            document.getElementById("output").innerText = result;
+        }
+
+        showData();
+    </script>
+</body>
+
+</html>
