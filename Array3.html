@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Map and Sort Array</title>
+</head>
+
+<body>
+
+    <h2>Map and Sort Array</h2>
+
+    <button onclick="processArray()">Run</button>
+
+    <p id="output"></p>
+
+    <script>
+        function processArray() {
+            let numbers = [2, 4, 6, 8];
+
+            let mappedArray = numbers.map(function (num) {
+                return num * 2;
+            });
+
+            let ascending = [...mappedArray].sort(function (a, b) {
+                return a - b;
+            });
+
+            let descending = [...mappedArray].sort(function (a, b) {
+                return b - a;
+            });
+
+            let result =
+                "Mapped: " + mappedArray + "<br>" +
+                "Ascending: " + ascending + "<br>" +
+                "Descending: " + descending;
+
+            document.getElementById("output").innerHTML = result;
+        }
+    </script>
+
+</body>
+
+</html>
