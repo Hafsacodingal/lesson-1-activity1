@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Error Handling</title>
+</head>
+
+<body>
+
+    <h2>Error Handling Example</h2>
+
+    <button onclick="checkAge()">Check Age</button>
+
+    <p id="output"></p>
+
+    <script>
+        function checkAge() {
+            let output = document.getElementById("output");
+
+            try {
+                let age = -5;
+
+                if (age < 0) {
+                    throw "Age cannot be negative!";
+                }
+
+                output.innerText = "Valid age: " + age;
+            }
+            catch (error) {
+                output.innerText = "Error: " + error;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
