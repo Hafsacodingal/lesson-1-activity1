@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Classes in JS</title>
+</head>
+
+<body>
+
+    <h2>Class Example</h2>
+
+    <button onclick="runClass()">Run</button>
+
+    <p id="output"></p>
+
+    <script>
+        class Person {
+            constructor(name) {
+                this.name = name;
+            }
+
+            showName() {
+                return "Name: " + this.name;
+            }
+
+            static greet() {
+                return "Hello from static method!";
+            }
+        }
+
+        class Student extends Person {
+            constructor(name, grade) {
+                super(name);
+                this.grade = grade;
+            }
+
+            showGrade() {
+                return "Grade: " + this.grade;
+            }
+        }
+
+        function runClass() {
+            let student1 = new Student("John", "A");
+
+            let result =
+                student1.showName() + "<br>" +
+                student1.showGrade() + "<br>" +
+                Person.greet();
+
+            document.getElementById("output").innerHTML = result;
+        }
+    </script>
+
+</body>
+
+</html>
