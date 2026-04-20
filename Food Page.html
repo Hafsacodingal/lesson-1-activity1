@@ -78,9 +78,15 @@
         .navigation{
             border-bottom: 1px solid #ccc;
         }
-        .banner img{
-            margin-left: 800px;
+       .banner img{
+        width: 300px;
+        display: block;
+        margin: 10px auto;
         }
+        .footer{
+            text-align: center;
+        }
+       
     </style>
 </head>
 
@@ -118,9 +124,8 @@
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE9tBwFS5bDpcNsp8UlDNHnN3fg2WgJsmK8A&s">
             </div>
 
-            <h2>Cuisines</h2>
-
             <div class="items">
+                <h2>Cuisines</h2>
 
                 <div class="card">
                     <img src="https://e7.pngegg.com/pngimages/544/160/png-clipart-pizza-hut-restaurant-pizza-delivery-pizza-food-cheese-thumbnail.png" />
@@ -140,11 +145,43 @@
                 <div class="card">
                     <img src="https://www.bhg.com/thmb/5kDgr3hzc5fYHQGHYBwr0zhCtsA=/4085x0/filters:no_upscale():strip_icc()/R277194_BP_1345_preview-a15528443e23455f8bc21cae06fd4020.jpg" />
                     <p>Ice Cream</p>
+                </div><br><br><br>
+                
+                <div class="items">
+                <h2>Popular Restaurants</h2>
+                    <div class="card">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAtCAMAAADMQ1gEAAAAllBMVEX////iOD8iHx8AAADwo6bhLDQYFBTjPEMbFxcSDQ1VU1Pr6uoeGhrIx8eEgoL39/dubGzx8fEvLCxDQUGrqqre3d1+fHy9vLxkYmJ4dnYKAACUk5OysbHiNDvoVVv2yMmhoKA7OTnS0tL64OHveH3xkZXqRUz88vL1trjrZ2z519nsbnPuhorpT1X0v8HyrbDlGCThISv3diaTAAACtUlEQVRIicWVW5uiMAyGO412SGkpFEsr6A4w51nn9P//3AZ0nhm1qLs3+12QKH1NmqSVsQPdrK8jWt8erjvS3fwqovn9Oe72ah0D1w+PZ8BZNCCFfDrNPb5GA1LI59Pg20RAIl9OBvw9EZBy3ZhJ7HY2legY8td7vEAvm6v5CY7I+cP9UTvN2/P8NLZF53c3e1ubvZ6nvtjvjG8260uxEf283gwVfr/++Jz/pT4/Xp/Y7B8Vq6/xfrpnh2vTnQrySwB5KalBCIFQo61MConA9NKQZcJVp3NUEFgr5eJSjsmEi5ylVnHwWZ63RbaT39nKuSaE0LgoOBhsJGKnOVhZI2KTkEMWKwtySd/oKJgLjlmDquxVxlY1feihYS2Sk4FIaRnmx+CSsUBgM4C6YwVXqiv6krlEKZummWa94iLEwKKjPeoMCTAsR157ZgyTgsOKKl9xSCbArObCsmoAx0SXw6uWHMovAPI+wwiY5DmI2rotSAVWlsaBOco4SZkHyoURGNtjH2RDawksC0oU/PAmbBNd1AMYkliq1c4PmHQt7gK2oFRJc+RQKC4hUdzHqjqoRztKCJv3RnYdChs085InwZdoJ0FGoz7IZYCYLxaZq6jvuV9VNDXGFXtcYVEgdWwxyKSjcczbugagudWj07JjaUlzKJ0TUAM3qSID9PtpE6p+TKIJyz7C/cwYs3HyDqt3Rj/A/X65MwdtClwcznYMbHag814b5umZBhDSxy+FXn+BSWjasTktAOjhAuJL5JyLVRRsofJ9r0vFubJc8CEicqFZQ5Aplcgnri8NwymviaPJS4k/Aqd2l1GLubT8uzgXgqxfaWd+VvVS8Ks4/xFMgVrT0k2raAfKLt2JvwVPrQMsUhwsHSsBUNK4rzwNfb46MXWpHmTM1jCd08Xda02PxrNib3T+AOxUO1Vv9ugFAAAAAElFTkSuQmCC">
+                        <p>Pizza Hut</p>
+                    </div>
+                
+                    <div class="card">
+                        <img src="data:image/png;base64,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">
+                        <p>KFC</p>
+                    </div>
+                
+                    <div class="card">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAANlBMVEVHcEz+zDL+zDH+zDL+zDL+zDL+zDL+zDL+zDL+zDL+zDL+zDL+zDL+zDL+zDL+zDL+zDL+zDLQVF1NAAAAEnRSTlMAJQyO768Yn87/P+Qw2L9Tf2sG5fhAAAABG0lEQVR4Aa1SB5KEMAyTgxOiVPj/Y69k8ODrVVsQQsgF8I+QcPPgTgybxmQ87LobNylTyXJlkcoq8IjMbaMuMXVGGcxwmGR6dnUAGBwAyMMXWFpZRYQ8AezsyQfM56MyB0TymTd1EfFqKVKb1JWGlNlhIIclHXNVWDUod4UNV+yINu1pzudkTlyxpG2gkTnYDBY2SJoMsi8ZRUnA6lo/gFrwJBWwuqQ9hmxNbGS+212qxQ0rHC+tkJYLHGRdpN5rTyRZXL1FrlTjbK5euu6a3hBcvbKOzqAW6y5MVxbVGZqSRwDOzwx7QjhIbSZ2Uo1LJUdC2r8yRLKaAUO1e0MWpEH3iktr4g1dkGKtWfAOUq51CJBEBO9CRBL+jkesPA0yeS6urwAAAABJRU5ErkJggg==">
+                        <p>McDonald's</p>
+                    </div>
+                
+                    <div class="card">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAsVBMVEX////V6t7Q6Nn3/Pnv+POq1bo/o2a63ciUzatRrHYrmVYAhzQNkESg0LIAjz4AgiYAhjEAiTgAfhtnuokAhitjtIM+nl9gqncnlk+KxaB1t4vk9fGq1cB3wJT96bX846LTz3+/xWj/+u3645rzvgDyuAD2zFj+9eDE5dL42obytQD1yUkvoV/ytwD87cf98ND0wSf42Xip0qupwGqsz6D+3pT0xUz2y2L0wjX//vv/+/EhWIzPAAAA5UlEQVR4Ac3QxZHDQBBA0TaJ2UxiZqb8A9tW7UlTCsD/+gYbfqHdHrY7HA7HE0VvyJFhKYzjhRNJB1GSFYXHVF47EyheeFXlFXSVV6/ERglNvd3v95vyeB7WeJLRXvv3+y1SH8Lgq6j8Yw+6YZiWYZN4UXluD47rYX6wxlDDY0WAIIqxBNalCs9frnsA3cuyOCemRglLTyjKOIsrckB1035OIeRbaHelbttBXi3H6msLKs/rh2EYMzR3Wu8bMzxtCc0jNs5+/I+Yq0+wboq8bEww35iCGcj0MYdpWjbN5E6sCOAH+gMQiRuFxVUn7QAAAABJRU5ErkJggg==">
+                        <p>Subway</p>
+                    </div>
+                
                 </div>
 
             </div>
 
         </div>
+    </div>
+    <div class="footer">
+        <p>© 2026 Food Website</p>
+        <p>
+            <a href="">About</a> |
+            <a href="">Contact</a> |
+            <a href="">Help</a>
+        </p>
     </div>
 
 </body>
