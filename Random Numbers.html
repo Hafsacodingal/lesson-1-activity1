@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Random Numbers</title>
+</head>
+
+<body>
+
+    <h2>Random Numbers</h2>
+    <button onclick="printNumbers()">Click Me</button>
+
+    <p id="result"></p>
+
+    <script>
+        function printNumbers() {
+            let i = 1;
+            let output = "";
+
+            while (i <= 5) {
+                let num = Math.floor(Math.random() * 100);
+                output = output + num + "<br>";
+                i++;
+            }
+
+            document.getElementById("result").innerHTML = output;
+        }
+    </script>
+
+</body>
+
+</html>
