@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Bank App Part 2</title>
+    <title>Bank App Part 3</title>
 
     <style>
         body {
@@ -45,6 +45,11 @@
             background-color: red;
         }
 
+        .clear {
+            background-color: gray;
+            width: 92%;
+        }
+
         ul {
             text-align: left;
             padding-left: 20px;
@@ -53,6 +58,10 @@
         h3 {
             color: blue;
         }
+
+        h4 {
+            margin-bottom: 5px;
+        }
     </style>
 </head>
 
@@ -60,7 +69,7 @@
 
     <div class="box">
 
-        <h2>Bank App - Part 2</h2>
+        <h2>Bank App - Part 3</h2>
 
         <input type="number" id="amount" placeholder="Enter amount"><br>
 
@@ -69,37 +78,86 @@
 
         <h3 id="balance">Balance: 0</h3>
 
+        <!-- New Part -->
+        <h4 id="incomeTotal">Total Income: 0</h4>
+        <h4 id="expenseTotal">Total Expense: 0</h4>
+
+        <button class="clear" onclick="clearAll()">Clear All</button>
+
         <h4>Transactions</h4>
         <ul id="list"></ul>
 
     </div>
 
     <script>
+
         let balance = 0;
+        let totalIncome = 0;
+        let totalExpense = 0;
 
         function addIncome() {
-            let amount = document.getElementById("amount").value;
-            balance += Number(amount);
 
-            document.getElementById("balance").innerHTML = "Balance: " + balance;
+            let amount = Number(document.getElementById("amount").value);
+
+            balance += amount;
+            totalIncome += amount;
+
+            document.getElementById("balance").innerHTML =
+                "Balance: " + balance;
+
+            document.getElementById("incomeTotal").innerHTML =
+                "Total Income: " + totalIncome;
 
             let li = document.createElement("li");
             li.innerHTML = "Income: " + amount;
+
             document.getElementById("list").appendChild(li);
+
+            document.getElementById("amount").value = "";
         }
 
         function addExpense() {
-            let amount = document.getElementById("amount").value;
-            balance -= Number(amount);
 
-            document.getElementById("balance").innerHTML = "Balance: " + balance;
+            let amount = Number(document.getElementById("amount").value);
+
+            balance -= amount;
+            totalExpense += amount;
+
+            document.getElementById("balance").innerHTML =
+                "Balance: " + balance;
+
+            document.getElementById("expenseTotal").innerHTML =
+                "Total Expense: " + totalExpense;
 
             let li = document.createElement("li");
             li.innerHTML = "Expense: " + amount;
+
             document.getElementById("list").appendChild(li);
+
+            document.getElementById("amount").value = "";
         }
+
+        // New Function
+        function clearAll() {
+
+            balance = 0;
+            totalIncome = 0;
+            totalExpense = 0;
+
+            document.getElementById("balance").innerHTML =
+                "Balance: 0";
+
+            document.getElementById("incomeTotal").innerHTML =
+                "Total Income: 0";
+
+            document.getElementById("expenseTotal").innerHTML =
+                "Total Expense: 0";
+
+            document.getElementById("list").innerHTML = "";
+        }
+
     </script>
 
 </body>
 
-</html>>
+</html>
