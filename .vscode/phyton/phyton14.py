@@ -1,0 +1,12 @@
+import turtle
+turtle.Screen().bgcolor("sea green")
+sc=turtle.Screen()
+pointer=turtle.Turtle()
+pointer.forward(200)
+pointer.left(90)
+pointer.forward(100)
+pointer.left(90)
+pointer.forward(200)
+pointer.left(90)
+pointer.forward(100)
+turtle.done()
