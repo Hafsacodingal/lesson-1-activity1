@@ -1,5 +1,5 @@
 def intro(name):
-    print("Hello,Good morning!I am", name)
+    print("Hello,Good morning!I am", name)  
 user_name= input("Enter your name")
 intro(user_name)
 
@@ -27,4 +27,4 @@ def div(x,y):
 print(add(4,5))
 print(sub(7,5))
 print(mul(4,7))
-print(div(2,6))
+print(div(2*,6))
