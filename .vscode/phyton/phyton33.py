@@ -1,0 +1,26 @@
+file=open("To do List","w")
+file.write("1.Going to School")
+file.write("2.Attending Class")
+file.write("3.Completing Projects")
+file.close()
+
+file=open("To do List","r")
+conent=file.read()
+print(conent)
+file.close()
+
+file=open("To do List","r")
+conent=file.readlines()
+print(len(conent))
+file.close()
+
+file=open("To do List","a")
+file.write("1.Going to School")
+file.write("2.Attending Class")
+file.write("3.Completing Projects")
+file.close()
+
+file=open("To do List","r")
+conent=file.read()
+print(conent)
+file.close()
