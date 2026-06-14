@@ -1,0 +1,26 @@
+file=open("Shpping List","w")
+file.write("1.Dress  ")
+file.write("2.sheos  ")
+file.write("3.Makeup  ")
+file.write("4.Jewellery  ")
+file.close()
+
+file=open("Shpping List","r")
+content=file.read()
+print(content)
+file.close()
+
+file=open("Shpping List","r")
+content=file.readlines()
+print(len(content))
+file.close()
+
+file=open("Shpping List","a")
+file.write("5.Groceries  ")
+file.write("6.Acceseries  ")
+file.close()
+
+file=open("Shpping List","r")
+content=file.read()
+print(content)
+file.close()
