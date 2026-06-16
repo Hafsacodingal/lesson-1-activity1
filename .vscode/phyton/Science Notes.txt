@@ -1,0 +1,6 @@
+file=open("Science Notes","w")
+file.write("Planets orbit the Sun ")
+file.write("The Moon causes tides ")
+file.write("Light is faster than sound ")
+file.write("Plants convert sunlight to food ")
+file.close()

@@ -1,0 +1,6 @@
+file=open("Word Count","w")
+file.write("Triangles have three sides ")
+file.write("Pi is 3.14 ")
+file.write("Area equals length times width ")
+file.write("Prime numbers divide only by one ")
+file.close()
